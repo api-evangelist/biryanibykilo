@@ -1,23 +1,74 @@
 aid: biryanibykilo
+
 name: Biryanibykilo
-description: 'Biryanibykilo is a company surfaced via the API Evangelist harvest backlog (source: secondary-market)
-  and added to the network as a stub for full-pipeline profiling.'
+
+image: https://biryanibykilo.com/favicon.png
+
+description: 'Biryanibykilo is an Indian online food ordering platform specializing in biryani and related dishes. It offers customers the ability to browse menus, place orders for delivery or pickup, and track order status through its website and mobile apps. The service focuses on a wide variety of regional biryani styles, catering to diverse taste preferences across India.'
+
 url: https://raw.githubusercontent.com/api-evangelist/biryanibykilo/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:secondary-market
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-09-28 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-09-28'
+
 modified: '2026-09-28'
+
 tags:
 - Company
-apis: []
+- Food
+- Delivery
+- Biryani
+- India
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+
 common:
+- type: Security
+  url: security/biryanibykilo-vulnerability-disclosure.yml
+- type: Hosts
+  url: hosts/biryanibykilo-hosts.yml
+- type: Vendors
+  url: vendors/biryanibykilo-vendors.yml
+- type: TermsOfService
+  url: https://biryanibykilo.com/terms-and-conditions
+- type: Newsroom
+  url: https://biryanibykilo.com/media
+- type: Blog
+  url: https://biryanibykilo.com/blog
+- type: GitHubOrganization
+  url: https://github.com/biryanibykilo
+- type: VulnerabilityDisclosure
+  url: security/biryanibykilo-vulnerability-disclosure.yml
+- type: DomainSecurity
+  url: security/biryanibykilo-domain-security.yml
 - type: Website
-  url: https://equityzen.com/company/biryanibykilo
+  url: https://biryanibykilo.com
+
+apis: []
+
+x-coverage:
+  state: none
+  reason: no-developer-program
+  detail: Biryanibykilo provides a consumer food ordering website with no public developer program or API documentation.
+  evidence:
+    - url: https://biryanibykilo.com
+      status: 200
+  checked: '2026-09-28'
+x-enrichment:
+  date: '2026-09-28'
+  status: enriched
+  artifacts_added: 5
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local,regulatory=local
